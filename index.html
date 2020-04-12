@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Canvas Clock</title>
+	<style type="text/css">
+		body {
+			background-color: #D0CDC6;
+		}
+		#greet {
+			text-align: center;
+			margin-top: 200px;
+			font-size: 20px;
+			font-family: sans-serif;
+			color: #56604E;
+		}
+		.clock {
+			text-align: center;
+			
+		}
+		#code {
+			text-align: center;
+			font-family: sans-serif;
+			color: #56604E;
+			font-size: 16px;
+		}
+		
+	</style>
+</head>
+<body>
+	<p id='greet'>Hello</p>
+	<div class="clock">
+		<canvas id="clock" ></canvas>
+	</div>
+	<p id='code'>See the source code <a href="https://github.com/JinWangQ/clock-by-canvas">here</a></p>
+	
+	<script type="text/javascript" src="clock.js"></script>
+	
+	
+	
+	<script>
+		var now2 = new Date();
+		var year = now2.getFullYear();
+		var mo = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+		var month = mo[now2.getMonth()];
+		var date = now2.getDate();
+		var week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		var day = week[now2.getDay()];
+
+		document.getElementById('greet').innerHTML = 'Today is ' + day + ' ' + month + ' ' + date + '. Have a nice day!';
+
+	</script>
+	
+</body>
+</html>
