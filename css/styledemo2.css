@@ -1,6 +1,9 @@
+body
+{
+    font-size: 13px;
+}
 #divtest
 {
-    font-size: 62.5%;
     width: 382px;
 }
 #divtest .title
@@ -19,15 +22,9 @@
     background-color: #fff;
     font-size: 13px;
 }
-#divtest .content .input
+#divtest a
 {
-    width: 120px;
-}
-#divtest .content .prev
-{
-    width: 100px;
-    height: 70px;
-    border: solid 1px #ccc;
+    width: 127px;
 }
 .fl
 {
